@@ -16,7 +16,7 @@ Future<void> init() async {
 }
 
 Future<void> initHive() async {
-  const boxName = 'dictionary_box';
+  const boxName = 'eats_box';
   final Directory directory = await getApplicationDocumentsDirectory();
   Hive.init(directory.path);
   hiveBox = await Hive.openBox<dynamic>(boxName);

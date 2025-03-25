@@ -6,7 +6,7 @@ sealed class Routes {
   static const String initial = '/';
 
   /// Home
-  static const String homePage = '/homePage';
+  static const String home = '/homePage';
   static const String splash = '/splash';
   static const String welcome = '/welcome';
   static const String auth = '/auth';

@@ -29,6 +29,9 @@ dependencies:
   # database
   sqflite:
 
+  #network
+  dio:
+
   # state management
   flutter_bloc:
   provider:

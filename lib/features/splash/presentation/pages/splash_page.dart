@@ -14,7 +14,7 @@ class SplashPage extends StatelessWidget {
       body: BlocListener<SplashBloc, SplashState>(
         listener: (context, state) {
           if(state.isLogged) {
-            context.go(Routes.homePage);
+            context.go(Routes.home);
           } else {
             context.go(Routes.welcome);
           }

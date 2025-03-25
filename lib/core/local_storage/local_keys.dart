@@ -3,5 +3,6 @@ sealed class LocalKeys {
 
   static const String isDarkMode = 'isDarkMode';
   static const String userData = 'userData';
-  static const String appLanguage = "appLanguage";
+  static const String language = "appLanguage";
+  static const String accessToken = "appLanguage";
 }
