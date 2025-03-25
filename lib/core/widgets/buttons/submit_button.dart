@@ -1,5 +1,4 @@
 import 'package:eats/core/extension/extension.dart';
-import 'package:eats/core/utils/text_style.dart';
 import 'package:eats/core/utils/utils.dart';
 
 class SubmitButton extends StatelessWidget {

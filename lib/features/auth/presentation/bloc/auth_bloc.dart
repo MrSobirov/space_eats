@@ -1,4 +1,3 @@
-import 'package:bloc/bloc.dart';
 import 'package:eats/core/extension/extension.dart';
 import 'package:eats/core/local_storage/local_keys.dart';
 import 'package:eats/injector_container.dart';

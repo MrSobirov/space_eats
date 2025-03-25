@@ -1,4 +1,3 @@
-import 'package:bloc/bloc.dart';
 import 'package:eats/core/utils/utils.dart';
 import 'package:eats/injector_container.dart';
 import 'package:equatable/equatable.dart';

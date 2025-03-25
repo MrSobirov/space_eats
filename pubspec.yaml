@@ -38,6 +38,9 @@ dependencies:
 
   # upgrader
   upgrader:
+
+
+  shared_preferences:
   google_fonts:
   equatable:
   get_it:

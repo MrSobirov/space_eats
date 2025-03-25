@@ -41,7 +41,6 @@ ThemeData createTheme(Brightness brightness) {
     extensions: <ThemeExtension<dynamic>>[
       brightness == Brightness.light ? ThemeColors.light : ThemeColors.dark,
     ],
-    dialogBackgroundColor: appTheme.colorScheme.surface,
     scaffoldBackgroundColor: appColors.backGround,
     dividerTheme: DividerThemeData(
       thickness: 0.6,
