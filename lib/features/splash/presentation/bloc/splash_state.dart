@@ -1,10 +1,18 @@
 part of 'splash_bloc.dart';
 
-sealed class SplashState extends Equatable {
-  const SplashState();
-}
+class SplashState extends Equatable {
+  const SplashState({this.isLogged = false});
 
-final class SplashInitial extends SplashState {
+  final bool isLogged;
+
   @override
-  List<Object> get props => [];
+  List<Object?> get props => [isLogged];
+
+  SplashState copyWith({
+    bool? isLogged,
+  }) {
+    return SplashState(
+      isLogged: isLogged ?? this.isLogged,
+    );
+  }
 }

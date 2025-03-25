@@ -1,3 +1,6 @@
+import 'package:eats/features/auth/presentation/pages/auth_page.dart';
+import 'package:eats/features/auth/presentation/bloc/auth_bloc.dart';
+import 'package:eats/features/splash/presentation/pages/welcome_page.dart';
 import 'package:go_router/go_router.dart';
 
 import '../core/utils/utils.dart';
@@ -27,6 +30,17 @@ sealed class AppRoutes {
           create: (context) =>
               serviceLocator<SplashBloc>()..add(SplashEvent(context: context)),
           child: const SplashPage(),
+        ),
+      ),
+      GoRoute(
+        path: Routes.welcome,
+        builder: (context, state) => WelcomePage(),
+      ),
+      GoRoute(
+        path: Routes.auth,
+        builder: (context, state) => BlocProvider(
+          create: (context) => AuthBloc(),
+          child: const AuthPage(),
         ),
       ),
     ],

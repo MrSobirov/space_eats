@@ -8,5 +8,7 @@ sealed class Routes {
   /// Home
   static const String homePage = '/homePage';
   static const String splash = '/splash';
+  static const String welcome = '/welcome';
+  static const String auth = '/auth';
 
 }

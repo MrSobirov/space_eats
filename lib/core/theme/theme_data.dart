@@ -5,7 +5,7 @@ final brightness = PlatformDispatcher.instance.platformBrightness;
 // Define a method to create color schemes from seed color and brightness
 ColorScheme createColorScheme(Brightness brightness) {
   return ColorScheme.fromSeed(
-    seedColor: const Color(0xff027373),
+    seedColor: const Color(0xff0ABAB5),
     brightness: brightness,
   );
 }
@@ -141,23 +141,16 @@ ThemeData createTheme(Brightness brightness) {
       ),
       iconTheme: IconThemeData(color: appTheme.colorScheme.secondary),
       titleTextStyle: TextStyle(
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-        color: appColors.lightText,
+        fontSize: 22.sp,
+        fontWeight: FontWeight.w600,
+        color: appColors.textPrimary,
       ),
       toolbarTextStyle: appTheme.textTheme.titleLarge!
           .copyWith(color: appTheme.colorScheme.secondary, fontSize: 14),
-      backgroundColor: appColors.tertiary,
+      backgroundColor: appColors.backGround,
     ),
     checkboxTheme: CheckboxThemeData(
       side: BorderSide(color: appTheme.colorScheme.primary),
-    ),
-    textTheme: TextTheme(
-      titleLarge: TextStyle(
-        fontSize: 22,
-        fontWeight: FontWeight.bold,
-        color: appColors.lightText,
-      ),
     ),
   );
 }

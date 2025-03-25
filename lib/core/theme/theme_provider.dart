@@ -24,7 +24,7 @@ class ThemeProvider with ChangeNotifier {
   }
 
   void _loadTheme() async {
-    final bool isDarkMode = await hiveBox.get(LocalKeys.isDarkMode) ?? false;
+    final bool isDarkMode = await hiveBox.get(LocalKeys.isDarkMode) ?? true;
     _themeMode = isDarkMode ? ThemeMode.dark : ThemeMode.light;
     notifyListeners();
   }

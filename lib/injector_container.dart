@@ -4,17 +4,15 @@ import 'package:get_it/get_it.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
 
+import 'features/splash/presentation/bloc/splash_bloc.dart';
+
 
 final serviceLocator = GetIt.instance;
 late Box<dynamic> hiveBox;
 
 Future<void> init() async {
   await initHive();
-  /*serviceLocator
-    /// Core
-    ..registerFactory(() => SplashBloc())
-    ..registerFactory(() => HomeCubit())
-    ..registerFactory(() => BookmarkCubit());*/
+  serviceLocator.registerFactory(() => SplashBloc());
 }
 
 Future<void> initHive() async {

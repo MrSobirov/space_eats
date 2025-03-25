@@ -1,4 +1,3 @@
-import 'package:eats/core/extension/extension.dart';
 import 'package:flutter/material.dart';
 
 class CustomSwitch extends StatefulWidget {
@@ -58,7 +57,7 @@ class _CustomSwitchState extends State<CustomSwitch>
         padding: const EdgeInsets.symmetric(horizontal: 2.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(100.0),
-          color: context.appColors.tertiary,
+          //color: context.appColors.tertiary,
         ),
         child: Stack(
           children: [
@@ -71,9 +70,9 @@ class _CustomSwitchState extends State<CustomSwitch>
                 height: 24.0,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: widget.value
-                      ? context.appColors.primary
-                      : context.appColors.secondary,
+                  // color: widget.value
+                  //     ? context.appColors.primary
+                  //     : context.appColors.secondary,
                 ),
                 child: widget.value
                     ? Icon(widget.activeIcon ?? Icons.check, size: 16.0, color: Colors.white)
